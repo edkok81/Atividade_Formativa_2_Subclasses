@@ -8,6 +8,10 @@ public class Terreno extends Financiamento {
         this.tipoZona = tipoZona;
     }
 
+    public String getTipoZona() {
+        return tipoZona;
+    }
+
     public double PagamentoMensal() {
         var valorPorcentagem = super.PagamentoMensal() * 0.02;
         return super.PagamentoMensal() + valorPorcentagem;

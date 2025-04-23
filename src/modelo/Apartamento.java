@@ -10,6 +10,14 @@ public class Apartamento extends Financiamento {
         this.numAndar = numAndar;
     }
 
+    public int getNumVagasGaragem() {
+        return numVagasGaragem;
+    }
+
+    public int getNumAndar() {
+        return numAndar;
+    }
+
     public double PagamentoMensal() {
         double taxaMensal = taxaJurosAnual / 12;
         double meses = prazoFinanciamento * 12;

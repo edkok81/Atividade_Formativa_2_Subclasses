@@ -8,7 +8,14 @@ public class Casa extends Financiamento {
         super(valorImovel, prazoFinanciamento, taxaJurosAnual);
         this.areaConstruida = areaConstruida;
         this.areaTerreno = areaTerreno;
+    }
 
+    public double getAreaConstruida() {
+        return areaConstruida;
+    }
+
+    public double getAreaTerreno() {
+        return areaTerreno;
     }
 
     public double PagamentoMensal() {
