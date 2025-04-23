@@ -14,7 +14,7 @@ public class Main {
 
         // Instanciar InterfaceUsuario
         InterfaceUsuario interfaceUsuario = new InterfaceUsuario();
-        ArrayList<Financiamento> listaDeFinanciamentos = new ArrayList<Financiamento>();
+        ArrayList<Financiamento> listaDeFinanciamentos = new ArrayList<>();
 
         //Instanciar Métodos de InterfaceUsuario
         System.out.println("** FINANCIAMENTO 1 - TERRENO **");
