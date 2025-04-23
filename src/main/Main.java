@@ -23,19 +23,19 @@ public class Main {
         double taxaJuros = interfaceUsuario.pedirTaxaJuros();
 
         // Instanciar Financiamento para Terreno
-        Terreno financiamentoTerreno = new Terreno(valorImovel, prazoFinanciamento, taxaJuros);
+        Terreno financiamentoTerreno = new Terreno(valorImovel, prazoFinanciamento, taxaJuros, "Residencial");
 
         System.out.printf("o valor mensal da parcela ficará em R$ %.2f\n", financiamentoTerreno.PagamentoMensal());
         System.out.printf("O valor total do financiamento será de R$ %.2f\n", financiamentoTerreno.totalPagamento());
 
         // Adicionar o financiamento do Terreno na lista
-        listaDeFinanciamentos.add(new modelo.Terreno(valorImovel, prazoFinanciamento, taxaJuros));
+        listaDeFinanciamentos.add(new modelo.Terreno(valorImovel, prazoFinanciamento, taxaJuros, "Comercial"));
 
         // Criar os financiamentos pedidos sem solicitar dados para o usuário
 
         //Criar e Instanciar Métodos das Casas 1 e 2
         System.out.println("\n** FINANCIAMENTO 2 - CASA 1 **");
-        Casa financiamentoCasa1 = new Casa(500000, 10, 10);
+        Casa financiamentoCasa1 = new Casa(500000, 200, 400,10, 10);
 
         System.out.printf("o valor mensal da parcela ficará em R$ %.2f\n", financiamentoCasa1.PagamentoMensal());
         System.out.printf("O valor total do financiamento será de R$ %.2f\n", financiamentoCasa1.totalPagamento());
@@ -44,7 +44,7 @@ public class Main {
         listaDeFinanciamentos.add(financiamentoCasa1);
 
         System.out.println("\n** FINANCIAMENTO 3 - CASA 2 **");
-        Casa financiamentoCasa2 = new Casa(250000, 10, 10);
+        Casa financiamentoCasa2 = new Casa(250000, 100,250,10, 10);
 
         System.out.printf("o valor mensal da parcela ficará em R$ %.2f\n", financiamentoCasa2.PagamentoMensal());
         System.out.printf("O valor total do financiamento será de R$ %.2f\n", financiamentoCasa2.totalPagamento());
@@ -54,7 +54,7 @@ public class Main {
 
         //Criar e Instanciar Métodos dos Apartamentos 1 e 2
         System.out.println("\n** FINANCIAMENTO 4 - APARTAMENTO 1 **");
-        Apartamento financiamentoApartamento1 = new Apartamento(500000, 10, 10);
+        Apartamento financiamentoApartamento1 = new Apartamento(500000, 10, 10, 2, 5);
 
         System.out.printf("o valor mensal da parcela ficará em R$ %.2f\n", financiamentoApartamento1.PagamentoMensal());
         System.out.printf("O valor total do financiamento será de R$ %.2f\n", financiamentoApartamento1.totalPagamento());
@@ -63,7 +63,7 @@ public class Main {
         listaDeFinanciamentos.add(financiamentoApartamento1);
 
         System.out.println("\n** FINANCIAMENTO 5 - APARTAMENTO 2 **");
-        Apartamento financiamentoApartamento2 = new Apartamento(250000, 10, 10);
+        Apartamento financiamentoApartamento2 = new Apartamento(250000, 10, 10,1, 10);
 
         System.out.printf("o valor mensal da parcela ficará em R$ %.2f\n", financiamentoApartamento2.PagamentoMensal());
         System.out.printf("O valor total do financiamento será de R$ %.2f\n", financiamentoApartamento2.totalPagamento());
